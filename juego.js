@@ -8,9 +8,7 @@ ingresarVideojuego(nuevoVideojuego){
     console.log(`se agrego video juego`);
     
 }
-informacio(){
-    return ``
-}
+
 
 obtenerVideojuegos(){
     if(this.#videojuegos.length > 0){
