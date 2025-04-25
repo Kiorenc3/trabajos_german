@@ -74,14 +74,14 @@ const inventario = new Inventario();
 const admin = new Admin(inventario);
 
 
-admin.ingresarJuego({ nombre: "Minecraft", precio: 20000, categoria: "Sandbox" });
-admin.ingresarJuego({ nombre: "Free Fire", precio: "Gratuito", categoria: "Survival" });
+admin.ingresarJuego({ nombre: "fornite", precio: 20000, categoria: "battle royal" });
+admin.ingresarJuego({ nombre: "warzon", precio: "Gratuito", categoria: "battle royal" });
 
 admin.obtenerjuego();
 
 
-admin.actualizarJuego("Free Fire", { precio: 25000, categoria: "Aventura" });
+admin.actualizarJuego("warzon", { precio: 25000, categoria: "battle royal" });
 
 
-admin.eliminarJuego({ nombre: "Minecraft" });
+admin.eliminarJuego({ nombre: "fornite" });
  admin.obtenerjuego()
