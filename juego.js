@@ -8,8 +8,6 @@ ingresarVideojuego(nuevoVideojuego){
     console.log(`se agrego video juego`);
     
 }
-
-
 obtenerVideojuegos(){
     if(this.#videojuegos.length > 0){
         this.#videojuegos.forEach((juego,indice)=>{
@@ -43,8 +41,6 @@ obtenerVideojuegos(){
         }
      
 }
-
-
 class Admin {
     constructor(inventario){
         this.inventario = inventario
@@ -69,19 +65,10 @@ class Admin {
 }
 
 const inventario = new Inventario();
-
-
 const admin = new Admin(inventario);
-
-
 admin.ingresarJuego({ nombre: "fornite", precio: 20000, categoria: "battle royal" });
 admin.ingresarJuego({ nombre: "warzon", precio: "Gratuito", categoria: "battle royal" });
-
 admin.obtenerjuego();
-
-
 admin.actualizarJuego("warzon", { precio: 25000, categoria: "battle royal" });
-
-
 admin.eliminarJuego({ nombre: "fornite" });
  admin.obtenerjuego()
